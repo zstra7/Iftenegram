@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
 	<!--css-->
-	
+	<link rel="stylesheet" href="css/main.css">
 	<!--Scripts-->
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
 </head>
 
 <body>
+	<section>
+		<h1>Iftenegram</h1>
+		<div id="app">
+			<card v-for="(item, index) in posts" v-bind:index="index" v-bind:content="item" v-on:comment="addComment"> 
+
+			</card>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
