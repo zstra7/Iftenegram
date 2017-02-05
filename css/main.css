@@ -44,6 +44,7 @@ a {
 }
 
 footer {
+	color: #545454;
 	max-width: 960px;
 	margin: 0 auto;
 	text-align: center;
@@ -107,11 +108,12 @@ footer {
 	float: left;
 	font-size: 19px;
 	padding: 18.5px 0;
+
 }
 
 .header-image {
 	float: left;
-	background-color: grey;
+	background-color: rgb(131, 255, 202);
 	width: 28px;
 	height: 28px;
 	border-radius: 50%;
