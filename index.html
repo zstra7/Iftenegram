@@ -3,6 +3,9 @@
 <head>
 	<!--css-->
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600,700" rel="stylesheet">
+
+
 	<!--Scripts-->
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 
@@ -12,7 +15,7 @@
 	<section>
 		<h1>Iftenegram</h1>
 		<div id="app">
-			<card v-for="(item, index) in posts" v-bind:index="index" v-bind:content="item" v-on:comment="addComment"> 
+			<card v-for="(item, index) in posts" v-bind:index="index" v-bind:content="item" v-on:comment="addComment" v-on:like="addLike"> 
 
 			</card>
 		</div>
