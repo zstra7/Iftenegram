@@ -1,18 +1,90 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #fafafa;
+	margin: 0;
+	font-size: 1em;
+
 }
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
+	font-family: 'Amatic SC', cursive;
+	font-weight: normal;
+	font-size: 2em;
+	margin: 0;
+}
+
+
+
+nav {
+	background-color: white;
+	padding: 18px 40px;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+nav input {
+	padding: 8px;
+	font-size: 0.8em;
+	border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    width: 80%;
+}
+
+nav input:focus {
+	background-color: white;
+}
+
+a {
+	color: #3897f0;
+	text-decoration: none;
+}
+
+footer {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+
+.nav-inner {
+	width: 100%;
+	max-width: 960px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+
+}
+
+.nav-inner a, .nav-inner input, .nav-inner h1 {
+	flex: 1;
+}
+
+.nav-inner a {
+	text-align: right;
+}
+
+.nav-inner h1 {
+	text-align: left;
+}
+
+#app {
+	max-width: 600px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .card {
+	width: 100%;
 	max-width: 600px;
 	border: 1px solid #e6e6e6;
 	padding-bottom: 0;
 	text-align: center;
-	margin: 0 auto;
+	
 	margin-bottom: 40px;
 	background-color: white;
 }
@@ -63,6 +135,11 @@ h1 {
 	font-weight: 600;
 }
 
+.image {
+	position: relative;
+	user-select: none;
+}
+
 .image img {
 	width: 100%;
 }
@@ -79,10 +156,8 @@ h1 {
 	width: 100%;
 	padding: 24px;
 	border: none;
-	font-size: 15px;
+	font-size: 1em;
 	line-height: 18px;
-	
-	
 	box-sizing: border-box;
 	outline: none;
 }
@@ -90,6 +165,29 @@ h1 {
 .info-wrapper {
 	margin-top: 20px;
 	padding: 0 24px;
-	font-size: 15px;
     line-height: 18px;
+}
+
+.heart {
+	fill: white;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+  	opacity: 0;
+}
+
+.heart.active {
+	animation: grow 1s ease;
+}
+
+@keyframes grow {
+  0% { 
+  	opacity: 0;
+  }
+  100% { 
+  	opacity: 1;
+  }
 }
